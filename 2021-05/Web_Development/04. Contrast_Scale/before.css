@@ -1,0 +1,26 @@
+/* Reset --> Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(61, 70, 78);
+}
+
+/* Shared styles for sections */
+.section {
+  background-color: rgb(7, 55, 119);
+
+  /* Initiatign the Flexbox Model */
+  display: flex;
+}
+
+/* Img */
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}

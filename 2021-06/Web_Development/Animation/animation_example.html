@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Example</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+
+        background-color: rgb(183, 217, 255);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 40vw;
+        height: 10vh;
+        background-color: rgb(86, 173, 255);
+
+        border-radius: 30px;
+
+        text-align: center;
+      }
+
+      .container h1 {
+        padding-top: 15px;
+      }
+
+      .animation {
+        animation-name: move;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+        animation-direction: alternate-reverse;
+        /* animation-direction: alternate; */
+        animation-duration: 2s;
+      }
+
+      .animation:hover {
+        /* background-color: black !important; */
+        animation-name: move;
+        animation-play-state: running;
+      }
+
+      @keyframes move {
+        from {
+          opacity: 100%;
+        }
+
+        to {
+          opacity: 0%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container animation">
+      <h1>My Awsome Animation</h1>
+    </div>
+  </body>
+</html>

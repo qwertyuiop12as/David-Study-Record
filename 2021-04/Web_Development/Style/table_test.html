@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .Table {
+            background: #faf5fd;
+            border-collapse: collapse;
+        }
+        .Country {
+            width: 50px;
+        }
+        .ID {
+            width: 60px;
+        }
+        .OA {
+            width: 70px;
+        }
+
+        th {
+            height: 17px;
+            background-color: rgba(3, 83, 255, 0.6);
+            color: white;
+            font-size: 10px;
+            
+        }
+
+        td {
+            height: 20px;
+            font-size : 10px;
+            border-bottom-style: solid;
+            border-bottom-color: rgb(255, 215, 255);
+        }
+
+        .white {
+            background-color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <table class="Table">
+      <thead>
+        <tr>
+          <th class="Country">Country</th>
+          <th class="ID">OrderID</th>
+          <th class="OA">Order Amount</th>
+        </tr>
+      </thead>
+
+      <tbody>
+            <tr class = "purple">
+                <td>USA</td>
+                <td>1000</td>
+                <td>$1,300</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr class = "white">
+                <td>USA</td>
+                <td>1001</td>
+                <td>$700</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr class = "purple">
+                <td>CA</td>
+                <td>1002</td>
+                <td>$2,000</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr class = "white">
+                <td>CA</td>
+                <td>1003</td>
+                <td>$1,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th></th>
+                <th>$5000</th>
+            </tr>
+        </tfoot>
+    </table>
+  </body>
+</html>

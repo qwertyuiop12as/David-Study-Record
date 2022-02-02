@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <style>
+      .container {
+        background-color: gold;
+        width: 1000px;
+        height: 500px;
+      }
+
+      .box {
+        background-color: plum;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <input class="todo-input" type="text" />
+      <button class="todo-button" type="submit">Submit</button>
+      <button class="box-button" type="submit">Box Submit</button>
+      <button class="save-button" type="submit">Save</button>
+    </form>
+
+    <div class="container"></div>
+  </body>
+
+  <script>
+    const input = document.querySelector(".todo-input");
+    const submitButton = document.querySelector(".todo-button");
+    const boxButton = document.querySelector(".box-button");
+    const container = document.querySelector(".container");
+
+    // EventListener
+    submitButton.addEventListener("click", addTodo);
+    boxButton.addEventListener("click", addBox);
+
+    // function
+    function addTodo(event) {
+      event.preventDefault();
+    }
+
+    function addBox(event) {
+      event.preventDefault();
+
+      const box = document.createElement("div");
+      const content = input.value;
+
+      box.innerHTML = "<p>" + content + "</p>";
+      box.classList.add("box");
+
+      container.appendChild(box);
+    }
+  </script>
+</html>

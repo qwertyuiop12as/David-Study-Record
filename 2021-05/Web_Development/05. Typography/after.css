@@ -1,0 +1,80 @@
+/* Reser ==> Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: rgb(216, 230, 218);
+  padding: 30px;
+}
+
+/* container for all sections */
+main .all-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* shared styles for sections */
+main .all-content .section {
+  width: 250px;
+  background-color: rgb(83, 95, 107);
+}
+
+/* Image Style */
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Title */
+h1 {
+  font-family: "Oswald", sans-serif;
+}
+
+/* All Paragraph (exclude first one) */
+p:not(:first-of-type) {
+  text-align: left;
+  font-family: "Liu Jian Mao Cao", cursive;
+}
+
+p {
+  font-family: "Spicy Rice", cursive;
+}
+
+/* ------------------------------ */
+/* ------------------------------ */
+
+/* Improvements */
+main > h1,
+main > p {
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 10px;
+}
+
+/* Shared Style for sections */
+.section {
+  margin: 20px 0;
+  padding: 20px;
+  border: 5px;
+  color: white;
+}
+
+/* Image Style */
+img {
+  display: block;
+  margin: 0 auto 15px;
+}
+
+/* All Paragraph */
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}

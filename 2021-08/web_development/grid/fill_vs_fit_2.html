@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+      }
+
+      .box:nth-child(even) {
+        background-color: #ccc;
+        color: #000;
+      }
+
+      .wrapper {
+        display: grid;
+        border: 1px solid #000;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      }
+
+      .wrapper2 {
+        display: grid;
+        border: 1px solid #000;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      /* fill은 요소가 없어도 min값(200px)을 만들 공간이 생기면 빈칸으로라도 그 공간을 부여한다 (그래서 full react가 안됨)
+         in contrast, fit은 걍 무조건 꽉 채움 걍 min 값(200px)의 공간을 할당하지 못할 정도로 좁아지면 다음줄로 넘김 (걍 full react) */
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <div class="wrapper2">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+/* Reset --> Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(61, 70, 78);
+}
+
+/* Shared styles for sections */
+.section {
+  background-color: rgb(7, 55, 119);
+
+  /* Initiatign the Flexbox Model */
+  display: flex;
+}
+
+/* Img */
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Improvement */
+
+/* Image */
+img {
+  margin-left: 20vw;
+  margin-bottom: 10vh;
+}
+
+.section-1 img {
+  margin-top: 5vh;
+}
+
+/* Content */
+.content {
+  color: rgb(223, 155, 255);
+
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Text margin */
+.content p,
+h3 {
+  margin: 10px 0;
+  margin-left: 20px;
+}
+
+.content p:first-of-type {
+  margin-top: 20px;
+}

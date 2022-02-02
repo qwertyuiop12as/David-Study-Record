@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inline_block</title>
+    <style>
+      section {
+        border: 10px solid red;
+        font-size: 5rem;
+        text-align: center;
+        /* text-align의 방향을 left, right로 바꾸어서 실제로 정렬 방향이 div에도 적용 되는지 확인이 가능 */
+      }
+
+      section > div {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        display: inline-block;
+        /* div요소 하나하나가 글자처럼 취급됨 */
+        /* 따라서  section tag의 "text-align: center"는 div를 글자처럼 봐서 div도 정렬을 해줌*/
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      1234
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex-container {
+        background-color: gray;
+        padding: 20px;
+        display: flex;
+      }
+
+      .box {
+        padding: 10px;
+        margin-left: 10px;
+        background-color: darkcyan;
+        color: white;
+      }
+
+      .box:nth-child(1) {
+        flex-grow: 1;
+      }
+
+      .box:nth-child(3) {
+        flex-grow: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="box">1st Child</div>
+      <div class="box">2nd Child</div>
+      <div class="box">3rd Child</div>
+      <div class="box">4th Child</div>
+    </div>
+  </body>
+</html>

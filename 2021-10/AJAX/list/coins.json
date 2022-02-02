@@ -1,0 +1,28 @@
+{
+    "coins" : [
+        {
+            "properties": 12,
+            "id": 1,
+            "name": "Bit",
+            "slvo": "AAA",
+            "in-active": true,
+            "platform": null
+        },
+        {
+            "properties": 8,
+            "id": 2,
+            "name": "Tesla",
+            "slvo": "BBB",
+            "in-active": false,
+            "platform": null
+        },
+        {
+            "properties": 12,
+            "id": 3,
+            "name": "Doge",
+            "slvo": "CCC",
+            "in-active": true,
+            "platform": null
+        }
+    ]
+}

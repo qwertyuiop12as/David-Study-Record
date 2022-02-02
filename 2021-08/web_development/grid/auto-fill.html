@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        background-color: #ff7052;
+        display: grid;
+
+        width: 100%;
+        grid-template-rows: repeat(2, minmax(150px, min-content));
+        grid-template-columns: repeat(auto-fill, 150px);
+      }
+
+      .item {
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        letter-spacing: 3px;
+      }
+
+      .item-1 {
+        background-color: chartreuse;
+      }
+
+      .item-2 {
+        background-color: chocolate;
+      }
+
+      .item-3 {
+        background-color: cornflowerblue;
+      }
+
+      .item-4 {
+        background-color: olivedrab;
+      }
+
+      .item-5 {
+        background-color: darkorchid;
+      }
+
+      .item-6 {
+        background-color: darkseagreen;
+      }
+
+      .item-7 {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="grid-container">
+      <div class="item item-1">I</div>
+      <div class="item item-2">was</div>
+      <div class="item item-3">written or show</div>
+      <div class="item item-4">here</div>
+      <div class="item item-5">to</div>
+      <div class="item item-6">have</div>
+      <div class="item item-7">something messed up here</div>
+      <div class="item item-8">fun</div>
+    </section>
+  </body>
+</html>

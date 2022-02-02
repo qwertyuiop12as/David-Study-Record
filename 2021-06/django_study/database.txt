@@ -1,0 +1,42 @@
+What Tables Should We Make?
+
+
+Common features (like authentication, comments, etc) are frequently built with conventional table names and columns
+
+What type of resources exist in your app? Create a separate table for each of these features
+
+Features that seem to indicate a relationship or ownership between two types of resources need to be reflected in our table design
+
+
+
+users가 있어야 photos comments likes가 있다.
+(users가 나머지 3개의 요소에게 ownership이 있다)
+
+photos가 있어야 comments가 있다.
+(photos가 comments에게 ownership이 있다)
+
+
+One-to-Many Relationship
+ex) A user own many photos
+    (user라는 하나의 요소가 다른 여려개의 photo요소를 가질 수 있다)
+    A photos has many comments
+    (photo라는 하나의 요소가 여려개의 comments를 가질 수 있다)
+
+Many-to-One Relationiship
+ex) A photo has one user
+     
+
+   Boat and Crew member
+     보트에서 항해사로는 One-to-Many
+     항해사에서 보트로는 Many-to-One
+
+One-to-One Relationships
+ex) Boat and Captain
+     CEO and Company
+
+
+Many-to-Many Relationships
+ex) Students and Classes
+     Tasks and Engineers
+     Players and Footbal Matches
+     

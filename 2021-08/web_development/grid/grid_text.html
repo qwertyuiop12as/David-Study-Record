@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      header,
+      section,
+      footer {
+        font-size: 20px;
+        text-align: center;
+        line-height: 100px;
+        letter-spacing: 3px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-gap: 25px;
+        background-color: rgb(194, 183, 122);
+
+        grid-template-areas:
+          "header header header header header header"
+          "sec-1 . sec-2 sec-2 . sec-3"
+          "sec-4 sec-4 . . sec-5 sec-5"
+          "sec-6 sec-6 sec-6 sec-6 sec-6 sec-6"
+          "footer footer footer footer footer footer";
+      }
+
+      .header {
+        background-color: red;
+        grid-area: header;
+      }
+
+      .section-1 {
+        background-color: orange;
+        grid-area: sec-1;
+      }
+
+      .section-2 {
+        background-color: yellow;
+        grid-area: sec-2;
+      }
+
+      .section-3 {
+        background-color: green;
+        grid-area: sec-3;
+      }
+
+      .section-4 {
+        background-color: blue;
+        grid-area: sec-4;
+      }
+
+      .section-5 {
+        background-color: indigo;
+        grid-area: sec-5;
+      }
+
+      .section-6 {
+        background-color: purple;
+        grid-area: sec-6;
+      }
+
+      .footer {
+        background-color: rgb(218, 23, 143);
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="grid-container">
+      <header class="header">Header</header>
+      <section class="section-1">Section-1</section>
+      <section class="section-2">Section-2</section>
+      <section class="section-3">Section-3</section>
+      <section class="section-4">Section-4</section>
+      <section class="section-5">Section-5</section>
+      <section class="section-6">Section-6</section>
+      <footer class="footer">Footer</footer>
+    </section>
+  </body>
+</html>

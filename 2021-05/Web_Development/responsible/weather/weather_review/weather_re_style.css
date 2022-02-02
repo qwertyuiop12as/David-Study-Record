@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  background-color: mediumseagreen;
+  font-family: "Dancing Script", cursive;
+  color: white;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+i {
+  font-size: 3rem;
+}
+
+sup {
+  font-size: 0.6rem;
+}
+
+h1.header {
+  margin: 3rem;
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+
+div.info_today {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.info_today_air {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.info_week {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

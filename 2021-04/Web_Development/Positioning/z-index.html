@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      html {
+          font-size: 62.5%;
+      }
+      .boxes {
+        border: 3px solid springgreen;
+      }
+
+      .box {
+        width: 5rem;
+        height: 5rem;
+      }
+
+      .box-one {
+        background-color: gold;
+      }
+
+      .box-two {
+        background-color: tomato;
+        position: relative;
+        
+        left: 2.5rem;
+        bottom: 2.5rem;
+
+        z-index: -1;
+        /* z-index는 html에서의 높이라고 생각하면 됨
+          -1을 했으므로 gold 색을 가진 box보다 낮아짐
+          --> tomato box가 밑으로 내려감 */
+      }
+
+      .box-three {
+        background-color: dodgerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box box-one"></div>
+      <div class="box box-two"></div>
+      <div class="box box-three"></div>
+    </div>
+  </body>
+</html>

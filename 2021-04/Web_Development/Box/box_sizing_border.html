@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width : 300px;
+            border: 5px solid gold;
+            background-color: rgb(255, 123, 0);
+        }
+
+        .container > div {
+            padding: 20px;
+            border: 3px solid purple;
+            margin-bottom : 20px;
+        }
+
+        .container .child1 {
+            width : 100%;
+            background-color: aqua;
+            /* box-sizing: content-box; 
+            아무것도 안 쓰면 content-box가 기본 설정*/
+        }
+
+        .container .child2 {
+            width : 100%;
+            background-color: red;
+            box-sizing: border-box;
+        }
+
+        .container .child3 {
+            width: auto;
+            background-color: greenyellow;
+        }
+
+        .container .child4 {
+            /* width : auto;
+            아무것도 안 쓰면 auto가 기본 설정 */
+            background-color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "child1"></div>
+        <div class = "child2"></div>
+        <div class = "child3"></div>
+        <div class = "child4"></div>
+    </div>
+</body>
+</html>

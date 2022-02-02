@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        text-align: center;
+      }
+
+      h1 {
+        color: rgb(101, 7, 239);
+      }
+
+      button {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        width: 300px;
+        padding: 1em;
+        margin: 0.5em;
+      }
+    </style>
+
+    <title>DOM Access</title>
+  </head>
+  <body>
+    <h1>Test Yourself</h1>
+    <h2>getElementsByClassName()</h2>
+    <div>
+      <button onclick="green()" class="green undo">
+        Click to change this to green
+      </button>
+      <button onclick="blue()" class="blue undo">
+        Click to change this to blue
+      </button>
+      <button onclick="red()" class="red undo">
+        Click to change this to red
+      </button>
+      <button onclick="undo()">Undo</button>
+    </div>
+    <script>
+      function green() {
+        // let green = document.getElementsByClassName("green");
+
+        // for (let i = 0; i < green.length; i++) {
+        //   green[i].style.backgroundColor = "green";
+        // }
+        //   green[0].style.backgroundColor = "green";
+
+        document.getElementsByClassName("green")[0].style.backgroundColor =
+          "green";
+
+        console.log("green box is clicked!");
+      }
+
+      function blue() {
+        // let blue = document.getElementsByClassName("blue");
+
+        // for (let i = 0; i < blue.length; i++) {
+        //   blue[i].style.backgroundColor = "blue";
+        // }
+        //   blue[0].style.backgroundColor = "blue";
+
+        document.getElementsByClassName("blue")[0].style.backgroundColor =
+          "blue";
+
+        console.log("blue box is clicked!");
+      }
+
+      function red() {
+        // let red = document.getElementsByClassName("red");
+
+        // for (let i = 0; i < red.length; i++) {
+        //   red[i].style.backgroundColor = "red";
+        // }
+        //   red[0].style.backgroundColor = "red";
+
+        document.getElementsByClassName("red")[0].style.backgroundColor = "red";
+
+        console.log("red box is clicked!");
+      }
+
+      function undo() {
+        let boxes = document.getElementsByClassName("undo");
+        for (let i = 0; i < boxes.length; i++) {
+          boxes[i].style.backgroundColor = "black";
+        }
+
+        console.log("Every thing black!");
+      }
+    </script>
+  </body>
+</html>

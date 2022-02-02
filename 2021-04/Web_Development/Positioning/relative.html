@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+        .boxes {
+            border : 3px solid lightblue;
+        }
+
+        .box {
+            width : 5rem;
+            height : 5rem;
+        }
+
+        .box-one {
+            background-color: gold;
+        }
+
+        .box-two {
+            background-color: tomato;
+            position: relative;
+            /* 만약 static(기본값)이라면 이동할 수 없음 */
+            left: 5rem;
+        }
+
+        .box-three {
+            background-color: dodgerblue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box box-one"></div>
+        <div class="box box-two"></div>
+        <div class="box box-three"></div>
+    </div>
+</body>
+</html>

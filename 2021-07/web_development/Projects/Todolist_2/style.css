@@ -1,0 +1,195 @@
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --button-color: rgb(255, 102, 31);
+}
+
+body {
+  background: rgb(255, 220, 90);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 220, 90, 1) 0%,
+    rgba(255, 131, 90, 1) 100%
+  );
+  color: black;
+
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+li {
+  list-style: none;
+}
+
+/*  ****** Header ****** */
+#header {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.header--title {
+  text-align: center;
+  font-size: 6rem;
+  color: white;
+}
+
+/* ****** Form tag / Input ****** */
+.form {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.todo-input,
+.todo-button,
+.filter-todo {
+  border: none;
+  box-shadow: none;
+  outline: none;
+
+  min-height: 5rem;
+
+  padding: 1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+
+  letter-spacing: 0.2rem;
+}
+
+.todo-button,
+.filter-todo {
+  cursor: pointer;
+}
+
+.todo-input {
+  padding-left: 2rem;
+  min-width: 60%;
+  font-family: "Poppins", sans-serif;
+}
+
+.todo-button {
+  background-color: #efefef;
+  transition: all 0.3s ease;
+}
+
+.todo-button:hover {
+  background-color: var(--button-color);
+}
+
+.todo-button:hover i {
+  color: #efefef;
+}
+
+.fa-plus-square {
+  font-size: 4rem;
+  color: var(--button-color);
+}
+
+/* ****** Select tag / Filter ****** */
+.select {
+  min-width: 30%;
+  margin-left: 5rem;
+
+  position: relative;
+}
+
+.filter-todo {
+  width: 100%;
+  padding: 1.8rem;
+
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+
+  color: #ff6f47;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  padding: 1.5rem;
+
+  font-size: 2rem;
+
+  color: white;
+  background-color: #ff6f47;
+
+  cursor: pointer;
+  pointer-events: none;
+}
+
+/* ****** todo-container / Todo List ****** */
+.todo-list {
+  width: 35vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo {
+  display: flex;
+  width: 100%;
+  margin: 1rem 0;
+
+  transition: all 0.5s ease-out;
+}
+
+.todo--para {
+  flex-grow: 1;
+
+  font-size: 2.5rem;
+  padding: 1rem;
+  padding-left: 2rem;
+
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.check-btn,
+.trash-btn {
+  outline: none;
+  border: none;
+
+  width: 6rem;
+  height: 6rem;
+
+  cursor: pointer;
+}
+
+.check-btn {
+  background-color: rgb(2, 204, 86);
+}
+
+.trash-btn {
+  background-color: #ff6f47;
+}
+
+.fa-check,
+.fa-trash {
+  color: white;
+  font-size: 2rem;
+  pointer-events: none;
+}
+
+/* ****** list Clicked Event ****** */
+.check {
+  opacity: 70%;
+  text-decoration: line-through;
+}
+
+.trash {
+  opacity: 0;
+  transform: translateY(8rem);
+}

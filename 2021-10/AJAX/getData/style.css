@@ -1,0 +1,27 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.human {
+  width: 200px;
+  height: 100px;
+
+  border: 2px solid black;
+  border-radius: 10px;
+
+  padding: 10px;
+
+  background-color: bisque;
+  margin: 10px;
+
+  box-sizing: border-box;
+}
+
+.human .city {
+    padding-left: 20px;
+}

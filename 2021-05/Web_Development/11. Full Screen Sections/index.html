@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Screen Sections</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      section {
+        background-color: indigo;
+        color: white;
+
+        /* Full Screen */
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        margin-bottom: 40px;
+        font-size: 68px;
+        border: 1px solid white;
+        padding: 12px 24px;
+      }
+
+      p {
+        font-size: 18px;
+        width: 70%;
+        margin-bottom: 30px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 12px 24px;
+      }
+
+      a:hover {
+        color: indigo;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Full Screen and Viewport</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eaque
+        assumenda. Labore impedit esse est quaerat fuga, modi recusandae vel
+        fugiat praesentium deserunt dolores eligendi facilis itaque sit
+        similique quas.
+      </p>
+      <a href="#">Sign Up</a>
+    </section>
+  </body>
+</html>

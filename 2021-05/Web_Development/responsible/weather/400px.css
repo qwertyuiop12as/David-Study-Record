@@ -1,0 +1,17 @@
+h1 {
+  font-size: 3rem !important;
+}
+
+.weather__info {
+    display : flex;
+    flex-direction: column;
+    margin : 0 0;
+}
+
+.weather__info > div {
+    margin : 1rem 0 !important;
+}
+/* p {
+    font-size: 1rem !important;
+    margin: 0.5rem 0;
+} */

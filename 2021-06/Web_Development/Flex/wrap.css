@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  background-color: #001f3f;
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.child {
+  background-color: #0074d9;
+  padding: 20px;
+  color: white;
+  flex: 0 1 auto;
+}
+
+.child3 {
+  flex: 1 0 1000px;
+  background: #ff851b;
+}

@@ -1,0 +1,7 @@
+section {
+  transform: scale(0.89);
+}
+
+section:nth-child(5) {
+  transform: scale(1.5);
+}

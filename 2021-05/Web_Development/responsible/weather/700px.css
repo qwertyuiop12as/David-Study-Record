@@ -1,0 +1,9 @@
+.weather__temp {
+    display : flex;
+    flex-direction : column;
+    align-items: center;
+}
+
+.weather__temp > div {
+    margin : 3vh;
+}

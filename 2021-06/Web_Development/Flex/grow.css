@@ -1,0 +1,18 @@
+.parent {
+    display: flex;
+    padding: 20px;
+}
+
+.child {
+    /* flex: 0 1 auto; */
+    /* flex: [flex-grow] [flex-shrink] [flex-basis]; */
+    /* flex: [max] [min] [ideal size]; */
+    /* padding: 20px; */
+    background-color: aqua;
+    color: salmon;
+    flex-grow : 1;
+}
+
+.child.child3 {
+    background-color: yellowgreen;
+}

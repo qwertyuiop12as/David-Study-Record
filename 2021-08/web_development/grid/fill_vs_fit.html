@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        background-color: #ff7052;
+        display: grid;
+
+        /*
+        - 한 줄에 몇개가 오는지 일일이 계산하기 귀찮을때
+        width: 1500px;
+        grid-template-rows: repeat(2, minmax(150px, min-content));
+        grid-template-columns: repeat(4, 150px);
+        */
+
+        /*
+        - 주어진 width 내에 들어갈 수 있는 적절한 반복횟수를 자동으로 설정한다 - auto-fill
+        width: 1500px;
+        grid-template-rows: repeat(2, minmax(150px, min-content));
+        grid-template-columns: repeat(auto-fill, 150px);
+        */
+
+        /*
+        auto-fill vs auto-fil을 확인하려면 grid-auto-rows가 없어야한다
+        */
+
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(20%, auto));
+        /* grid-auto-rows: minmax(150px, min-content); */
+      }
+
+      .item {
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        letter-spacing: 3px;
+      }
+
+      .item-1 {
+        background-color: chartreuse;
+      }
+
+      .item-2 {
+        background-color: chocolate;
+      }
+
+      .item-3 {
+        background-color: cornflowerblue;
+      }
+
+      .item-4 {
+        background-color: olivedrab;
+      }
+
+      .item-5 {
+        background-color: darkorchid;
+      }
+
+      .item-6 {
+        background-color: darkseagreen;
+      }
+
+      .item-7 {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="grid-container">
+      <div class="item item-1">item-1</div>
+      <div class="item item-2">item-2</div>
+      <div class="item item-3">item-3</div>
+      <div class="item item-4">item-4</div>
+      <div class="item item-5">item-5</div>
+      <div class="item item-6">item-6</div>
+      <div class="item item-7">item-7</div>
+      <div class="item item-6">item-6</div>
+      <div class="item item-7">item-7</div>
+    </section>
+  </body>
+</html>

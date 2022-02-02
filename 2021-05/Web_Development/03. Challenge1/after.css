@@ -1,0 +1,59 @@
+/* Reser ==> Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 251, 204);
+  height: 100vh;
+
+  /* Initiating the Flexbox Model */
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* shared(common) Styles for Sections */
+.section {
+  width: 300px;
+  background-color: rgb(166, 248, 159);
+}
+
+/* Images */
+img {
+  width: 300px;
+  height: 300px;
+}
+
+/* Date */
+.section .content p::first-of-type {
+  text-align: center;
+}
+
+/* Improvement */
+
+p {
+  font-size: 0.7rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+
+/* shared(common) Styles for sections */
+.section {
+  margin: 0 10px;
+}
+
+.section p {
+  padding: 15px;
+}
+
+.section h3 {
+  padding: 0 15px 0 15px;
+}

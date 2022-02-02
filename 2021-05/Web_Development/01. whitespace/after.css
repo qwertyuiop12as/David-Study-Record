@@ -1,0 +1,78 @@
+/* Reset, * is "Universal Selector" */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+p {
+  margin-left: 0.7rem;
+  padding: 0.4rem;
+}
+
+/* sports (main) */
+#sports {
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-evenly; /* main axis */
+  align-items: center; /* cross axis */
+}
+
+/* sport (common class for sections) */
+.sport {
+  width: 200px;
+  background-color: mediumturquoise;
+}
+
+/* Improvements */
+#sports {
+  padding: 20px;
+}
+
+/* Improvements basketball */
+.basketball {
+  padding: 15px;
+}
+
+.basketball h2 {
+  margin-bottom: 10px;
+}
+
+.basketball p {
+  line-height: 1.6;
+}
+
+/* Improvements football */
+.football {
+  padding: 15px;
+}
+
+.football h2 {
+  margin-bottom: 10px;
+}
+
+.football p {
+  line-height: 1.6;
+}
+
+/* Improvements golf */
+.golf {
+  padding: 15px;
+}
+
+.golf h2 {
+  margin-bottom: 10px;
+}
+
+.golf p {
+  line-height: 1.6;
+}

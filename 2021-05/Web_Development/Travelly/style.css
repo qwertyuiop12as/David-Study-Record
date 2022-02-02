@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+lable,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+/* header part */
+
+a {
+  color: pink;
+  text-decoration: none;
+  /* text 꾸미는 거 없애주는거
+  ex) a태그에 underline 지워주기 */
+}
+
+.main-head {
+  background: #131c27;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  min-height: 10vh;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 40rem;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 100;
+}
+
+/* 1번 본문 */
+
+.hero {
+  min-height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url(https://cdn-images-1.medium.com/max/1000/1*rDUy0tQbLwNDflDwhG_a7g.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+button {
+  border: none;
+  padding: 2rem 6rem;
+  background-color: #4c6e97;
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #27394e;
+}
+
+#locations {
+  min-height: 100vh;
+  background: url(https://cdn-images-1.medium.com/max/1000/1*-ml_Mi6wuVi8f3rrk1J22g.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cloud {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+
+.locations-head h2 {
+  padding : 1rem 0rem;
+  text-decoration : underline;
+}
+
+.moving-cloud-1 {
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+
+.moving-cloud-2 {
+  top: 20%;
+  z-index: -1;
+  opacity: 0.5;
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+/* button:active {
+  
+} */

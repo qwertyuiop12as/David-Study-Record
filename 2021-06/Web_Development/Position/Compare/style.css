@@ -1,0 +1,37 @@
+/* Universal Selectors */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: purple;
+}
+
+/* Container */
+.parent-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+  width: 50vh;
+}
+
+.parent-element div {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.element {
+  padding: 10px;
+}
+
+.sibling-element {
+  background-color: rgb(173, 10, 173);
+}
+
+.main-element {
+  background-color: #feed00;
+}

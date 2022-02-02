@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 150px);
+        gap: 15px;
+
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+
+        background-color: chocolate;
+      }
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: goldenrod;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item item-1">item-1</div>
+      <div class="item item-2">item-2</div>
+      <div class="item item-3">item-3</div>
+      <div class="item item-4">item-4</div>
+      <div class="item item-5">item-5</div>
+      <div class="item item-6">item-6</div>
+      <div class="item item-7">item-7</div>
+      <div class="item item-8">item-8</div>
+      <!-- items which overflow -->
+      <div class="item item-9">Uninvited-1</div>
+      <div class="item item-10">Uninvited-2</div>
+      <div class="item item-11">Uninvited-3</div>
+      <div class="item item-12">Uninvited-4</div>
+    </div>
+  </body>
+</html>

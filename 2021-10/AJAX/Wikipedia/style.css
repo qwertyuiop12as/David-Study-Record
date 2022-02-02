@@ -1,0 +1,21 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.box {
+    width: 60vw;
+    border: solid rgb(150, 150, 150) 1px;
+    margin: 10px;
+
+    border-radius: 10px;
+
+    padding: 10px;
+    box-shadow: rgb(134, 134, 134) 1px 1px 10px 1px;
+}
+
+.button {
+    margin-left: 10px;
+    background-color: rgb(255, 221, 133);
+    border-radius: 7px;
+    cursor: pointer;
+}

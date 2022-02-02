@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        position: relative;
+        background-color: lightgray;
+        width: 50%;
+        margin: auto;
+        height: 200vh;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+
+      .box-blue {
+        background-color: blue;
+      }
+
+      .box-orange {
+        background-color: orange;
+        position: fixed;
+        top: 0;
+        right: 0;
+      }
+
+      .box-yellow {
+        position: sticky;
+        background-color: green;
+        top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-blue"></div>
+      <div class="box box-orange"></div>
+      <p>Scroll Down to Page</p>
+      <div class="box box-yellow"></div>
+    </div>
+  </body>
+</html>

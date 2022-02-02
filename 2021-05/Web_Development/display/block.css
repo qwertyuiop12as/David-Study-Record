@@ -1,0 +1,12 @@
+div {
+  /* display: block; */
+
+  background-color: red;
+  height: 100%;
+
+  width: 300px;
+  /* block의 경우 한층 한층 블럭처럼 쌓는 느낌으로 width를 지정해주면 지정해준 길이만큼 width가 측정됨 */
+
+  font-size: 50px;
+  color: white;
+}

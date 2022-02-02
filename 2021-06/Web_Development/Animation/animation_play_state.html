@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Play State</title>
+    <style>
+      .box {
+        position: absolute;
+
+        width: 200px;
+        height: 200px;
+
+        animation-name: move;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      .box:hover {
+        /* box에 마우스를 올려두면 animation이 멈추면서 black으로 바뀜 */
+        animation-play-state: paused;
+        /* !important를 사용해서 우선순위 높히기 */
+        background-color: black !important;
+      }
+
+      @keyframes move {
+        from {
+          left: 0;
+          background-color: skyblue;
+        }
+        to {
+          left: 1000px;
+          background-color: salmon;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

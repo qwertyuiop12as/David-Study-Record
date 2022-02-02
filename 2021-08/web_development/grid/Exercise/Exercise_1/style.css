@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  background-color: gold;
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 150px);
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: orangered;
+}
+
+.item1 {
+  background-color: cornflowerblue;
+  grid-row: 2 / 4;
+  grid-column: 3 / 5;
+}
+
+.item2 {
+    background-color: hotpink;
+    grid-row: 1 / 5;
+}
+
+.item3 {
+    background-color: lawngreen;
+    grid-column: 2 / 4;
+}
+
+.item5 {
+    background-color: aqua;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.item7 {
+    background-color: blue;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.item8 {
+    background-color: crimson;
+    grid-column: 3 / 5;
+}

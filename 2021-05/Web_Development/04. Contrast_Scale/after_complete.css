@@ -1,0 +1,70 @@
+/* Reset --> Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing : border-box; */
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(61, 70, 78);
+}
+
+/* Shared styles for sections */
+.section {
+  background-color: rgb(7, 55, 119);
+
+  /* Initiatign the Flexbox Model */
+  display: flex;
+}
+
+/* Img */
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Improvement */
+#main-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Shared class for sections */
+.section {
+  width: 70%;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgb(131, 167, 214);
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Mouse Action : hover */
+.section:hover {
+  transform: scale(1.05);
+}
+
+/* Text Spacing */
+.content {
+  color: rgb(215, 228, 252);
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Text Styling */
+p:not(:first-of-type) {
+  font-size: 20px;
+}
+
+.section .content h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}

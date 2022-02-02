@@ -1,0 +1,12 @@
+div {
+  display: inline;
+
+  background-color: red;
+  height: 100%;
+  
+  width: 200px;
+  /* width에 200px를 줘도 한 줄에 최대한 많은 요소를 담기 위해서 text크기에 맞게 width가 적용됨 */
+
+  font-size: 50px;
+  color: white;
+}

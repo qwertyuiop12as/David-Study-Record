@@ -1,0 +1,22 @@
+{
+    "books": [
+        {
+            "properties" : 10,
+            "title": "Harry Potter",
+            "author": "J.K. Rowling",
+            "isbn": "1111-2222-3333-4444"
+        },
+        {
+            "properties" : 8,
+            "title": "League of Legend",
+            "author": "Riot Games",
+            "isbn": "3333-4444-5555-6666"
+        },
+        {
+            "properties" : 4,
+            "title": "My Book",
+            "author": "Jaewook Cho",
+            "isbn": "4444-3333-2222-1111"
+        }
+    ]
+}

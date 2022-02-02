@@ -1,0 +1,166 @@
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+#header {
+  width: 100%;
+  height: 20vh;
+  background-color: rgb(241, 241, 241);
+}
+
+/* Upper Header */
+.upper__header {
+  height: 8vh;
+  display: flex;
+  margin: auto;
+}
+
+.upper__header__logo {
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.upper__header__logo a {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.upper__header__info {
+  margin-left: 65%;
+  width: 15%;
+  display: flex;
+}
+
+.upper__header__info ul {
+  display: flex;
+  font-size: 0.5rem;
+  flex: 2 1 40rem;
+  justify-content: space-around;
+}
+
+.upper__header__info ul li {
+  font-size: 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Lower Header */
+.lower__header {
+  background-color: white;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lower__header__logo {
+  display: flex;
+  width: 12%;
+  justify-content: center;
+  align-items: center;
+}
+
+.lower__header__logo a {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.lower__header__menu {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.lower__header__menu ul {
+  display: flex;
+  flex: 2 1 40rem;
+  justify-content: space-around;
+}
+
+.lower__header__others {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.lower__header__others ul {
+  display: flex;
+  flex: 2 1 40rem;
+  justify-content: space-around;
+}
+
+/* Main */
+.advertisement {
+  height: 6vh;
+  background-color: rgb(241, 241, 241);
+  text-align: center;
+}
+
+.advertisement h1,
+a {
+  padding: 0.7vh 0;
+}
+
+.advertisement h1 {
+  font-size: 0.9rem;
+}
+
+.advertisement a {
+  text-decoration: underline;
+}
+
+/* Images */
+.image {
+  width: 90vw;
+  margin-bottom: 15vh;
+  margin-left: 5vw;
+}
+
+.image img {
+  width: 90vw;
+}
+
+.image h1 {
+  font-size: 2rem;
+  margin-bottom: 3vh;
+}
+
+.multiple__images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.images__trend img {
+  width: 44vw;
+}
+
+.images__featured img {
+  width: 44vw;
+}
+
+.images__summer img {
+  width: 29vw;
+}

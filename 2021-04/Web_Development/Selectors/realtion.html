@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* article 안에 있는 모든 h2 */
+        article h2 {
+            background-color: yellow;
+            color: brown;
+        }
+
+        /* article의 모든 직계 자식(직계 자식, 자손은 X) p */
+        article > p {
+            background-color: hotpink;
+            color : green
+        }
+
+        /* article이 끝나고 바로 다음 줄의 h3 */
+        article + h3 {
+            background-color: khaki;
+            color : blue;
+        }
+        
+        /* article 태그 뒤에 나오는 모든 h4 */
+        article ~ h4 {
+            background-color: cyan;
+            color :darkorange
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h2>Hello2_1 모든 자손</h2>
+        <p class = "opo">lorem ipsum_1 직계만</p>
+        <h2>Hello2_2 모든 자손</h2>
+        <div>
+            <p>lorem ipsum_2 직계만</p>
+        </div>
+    </article>
+    <h3>Hello3_1 바로 다음</h3>
+    <h3>Hello3_2 바로 다음</h3>
+    <h5>test value</h5>
+    <h4>Hello4 뒤에 모든</h4>
+    <h4>Hello4 뒤에 모든</h4>
+    <h4>Hello4 뒤에 모든</h4>
+    <h4>Hello4 뒤에 모든</h4>
+</body>
+</html>

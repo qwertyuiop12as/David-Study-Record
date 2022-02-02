@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .box {
+        position: absolute;
+        /* 부모요소가 없으므로 body기준으로 absolute가 됨 */
+
+        width: 200px;
+        height: 200px;
+
+        animation-name: move;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        /* animation-direction에 "alternate"를 지정하면 홀수번째에는 normal로, 짝수번째에는 reverse로 진행됨 */
+        /* 반대로 "alternate-reverse"를 지정하면 홀수번째에는 reverse로, 짝수번째에는 normal로 진행됨 */
+      }
+
+      @keyframes move {
+        /* animation 시작 지점 */
+        from {
+          left: 0;
+          background-color: skyblue;
+        }
+        /* animation 종료 지점 */
+        to {
+          left: 1000px;
+          background-color: salmon;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

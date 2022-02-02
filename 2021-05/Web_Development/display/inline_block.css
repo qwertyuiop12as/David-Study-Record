@@ -1,0 +1,12 @@
+div {
+  display: inline-block;
+
+  background-color: red;
+  height: 100%;
+
+  width: 100px;
+  /* inline-block의 경우 inline처럼 한줄에 여러 요소를 담을 수 있고 또한 block처럼 width를 주어 길이를 지정할 수도 있다 */
+
+  font-size: 50px;
+  color: white;
+}

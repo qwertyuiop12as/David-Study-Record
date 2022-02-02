@@ -1,0 +1,22 @@
+{
+    "friends" : [
+        {
+            "properties" : 10,
+            "first": "Ji Ho",
+            "last": "U",
+            "age": 17
+        },
+        {
+            "properties" : 3,
+            "first": "Yong Su",
+            "last": "Jeong",
+            "age": 25
+        },
+        {
+            "properties" : 5,
+            "first": "Jin Yeong",
+            "last": "Hong",
+            "age": 18
+        }
+    ]
+}

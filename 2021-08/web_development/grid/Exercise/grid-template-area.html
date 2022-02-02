@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+          "header header header header header header"
+          ". . sec-1 sec-2 . ."
+          ". sec-3 sec-3 sec-4 sec-4 ."
+          "sec-5 sec-5 sec-5 sec-6 sec-6 sec-6"
+          "footer footer footer footer footer footer";
+        background-color: rgb(255, 239, 197);
+      }
+
+      section,
+      header,
+      footer {
+          font-size: 20px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          text-align: center;
+          line-height: 100px;
+      }
+
+      .header {
+        grid-area: header;
+        background-color: deeppink;
+      }
+      .sec-1 {
+        grid-area: sec-1;
+        background-color: darkcyan;
+      }
+      .sec-2 {
+        grid-area: sec-2;
+        background-color: darkgoldenrod;
+      }
+      .sec-3 {
+        grid-area: sec-3;
+        background-color: darkmagenta;
+      }
+      .sec-4 {
+        grid-area: sec-4;
+        background-color: darkorange;
+      }
+      .sec-5 {
+        grid-area: sec-5;
+        background-color: darkred;
+      }
+      .sec-6 {
+        grid-area: sec-6;
+        background-color: darkslateblue;
+      }
+      .footer {
+        grid-area: footer;
+        background-color: deepskyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">Header</header>
+      <section class="sec-1">Section-1</section>
+      <section class="sec-2">Section-2</section>
+      <section class="sec-3">Section-3</section>
+      <section class="sec-4">Section-4</section>
+      <section class="sec-5">Section-5</section>
+      <section class="sec-6">Section-6</section>
+      <footer class="footer">footer</footer>
+    </div>
+  </body>
+</html>

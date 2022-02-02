@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tile</title>
+    <style>
+      body {
+        box-sizing: border-box;
+
+        height: 97vh;
+        width: 96vw;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+      }
+
+      .tile {
+        box-sizing: border-box;
+
+        width: 200px;
+        height: 200px;
+        
+        animation: color-change__black 2s;
+
+        background-color: black;
+        color: white;
+        
+        text-align: center;
+        line-height: 199px;
+
+        border: 2px solid black;
+      }
+
+      .color-change {
+        animation: color-change__white 2s;
+        background-color: white;
+        color: black;
+      }
+
+      @keyframes color-change__white {
+        from {
+          background-color: black;
+          color: white;
+        }
+
+        to {
+          background-color: white;
+          color: black;
+        }
+      }
+
+      @keyframes color-change__black {
+        from {
+          background-color: white;
+          color: black;
+        }
+
+        to {
+          background-color: black;
+          color: white;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tile" class="tile">Click to change Color</div>
+    <script>
+      const tile = document.getElementById("tile");
+
+      function color_change() {
+        tile.classList.toggle("color-change");
+      }
+
+      tile.addEventListener("click", color_change);
+    </script>
+  </body>
+</html>

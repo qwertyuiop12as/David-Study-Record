@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      :root {
+        font-size: 62.5%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: salmon;
+        height: 7.5rem;
+      }
+
+      section {
+        background-color: lightblue;
+        height: 30rem;
+      }
+
+      footer {
+        background-color: lightgreen;
+        height: 8.5rem;
+      }
+
+      header,
+      section,
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 2.5rem;
+        color: white;
+      }
+
+      /* section {
+          height: calc(98vh - 7.5rem - 8.5rem);
+      } */
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      section {
+        flex-grow: 1;
+      }
+    </style>
+    <title>Sticky Footer</title>
+  </head>
+  <body>
+    <header>Header</header>
+    <section>Section</section>
+    <footer>Footer</footer>
+  </body>
+</html>

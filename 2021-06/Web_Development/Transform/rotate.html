@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotate</title>
+    <style>
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 4px solid salmon;
+        box-sizing: border-box;
+
+        text-align: center;
+      }
+
+      .rotateX {
+          transform: rotateX(45deg);
+      }
+
+      .rotateY {
+          transform: rotateY(45deg);
+      }
+
+      .rotateZ {
+          transform: rotateZ(45deg);
+      }
+
+      .rotate {
+          transform: rotate(150deg);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="box">box</div>
+    <div class="box rotateX">rotateX</div>
+    <div class="box rotateY">rotateY</div>
+    <div class="box rotateZ">rotateZ</div>
+    <div class="box rotate">rotate</div>
+  </body>
+</html>

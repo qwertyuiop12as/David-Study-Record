@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading">Title of Today's study is DOM</h1>
+
+    <div class="box">Hello World</div>
+    <div class="box">Hello World</div>
+    <div class="box">Hello World</div>
+
+    <script>
+      let header = document.getElementById("heading");
+      header.style.backgroundColor = "gold";
+      console.dir(header);
+      console.log(header.nodeName);
+      console.log(header.nodeType);
+
+      // boxes에 box class를 가진 애들을 다 담아버림
+      // 일반 리스트는 ㄴㄴ
+      let boxes = document.getElementsByClassName("box");
+      // condole.dir(boxes);
+
+      for (let i = 0; i < boxes.length; i++) {
+        console.dir(boxes[i]);
+        boxes[i].style.backgroundColor = "aqua";
+      }
+
+      let namelist = [0, 1, 2, 3, 4, 5];
+
+      namelist.forEach((i) => {
+        console.log(i);
+      });
+
+    //   일반 리스트와는 다르게 저장이 되므로 forEach가 안됨
+    //   boxes.forEach((box) => {
+    //     console.log(box);
+    //   });
+    </script>
+  </body>
+</html>

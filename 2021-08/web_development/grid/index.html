@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      .grid-container {
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px);
+
+        gap: 15px;
+
+        background-color: rgb(0, 204, 255);
+      }
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: white;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        background-color: rgb(0, 162, 255);
+      }
+
+      .item-1 {
+          grid-column-start: 4;
+          grid-column-end: 5;
+          grid-row: 1 / 2;
+
+          background-color: aquamarine;
+      }
+
+      .item-5 {
+          grid-area: 2 / 1 / 4 / 3;
+          background-color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="grid-container">
+      <div class="item item-1">item1</div>
+      <div class="item item-2">item2</div>
+      <div class="item item-3">item3</div>
+      <div class="item item-4">item4</div>
+      <div class="item item-5">item5</div>
+      <div class="item item-6">item6</div>
+      <div class="item item-7">item7</div>
+      <div class="item item-8">item8</div>
+      <div class="item item-9">item9</div>
+      <div class="item item-10">item10</div>
+      <div class="item item-11">item11</div>
+      <div class="item item-12">item12</div>
+    </section>
+  </body>
+</html>

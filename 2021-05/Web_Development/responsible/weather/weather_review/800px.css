@@ -1,0 +1,16 @@
+div.info_week {
+  flex-direction: column;
+  align-items: center;
+}
+
+div.info_week > div {
+  margin: 1rem 0;
+}
+
+div.info_week p {
+  font-size: 2rem;
+}
+
+div.info_week i {
+  font-size: 4rem;
+}
