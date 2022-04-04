@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ********** Google Font(s) ********** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ********** Style ********** -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Trivia Database</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="header__title">
+        <span>Trivia</span>
+        <span>Database</span>
+        <span>Quiz</span>
+      </h1>
+    </header>
+    <div class="generator">
+      <p>Number of Questions</p>
+      <input type="number" id="generator__number" />
+      <p>Select Category</p>
+      <select name="category" id="generator__category"></select>
+      <p>Select Difficulty</p>
+      <select name="difficulty" id="generator__difficulty"></select>
+      <button class="generator__button">Start</button>
+    </div>
+    <div class="game">
+      <h1 class="game__progress"></h1>
+      <div class="game__question__box"></div>
+      <button class="game__next-btn">Next</button>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>

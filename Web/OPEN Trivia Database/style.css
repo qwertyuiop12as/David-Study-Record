@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Yuji Mai", serif;
+  font-weight: bold;
+
+  background-color: #383e4e;
+  color: white;
+}
+
+#header {
+  margin-top: 4rem;
+}
+
+.header__title {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.header__title span {
+  font-size: 6rem;
+}
+
+.header__title span:nth-of-type(1) {
+  color: #ff8151;
+}
+
+.header__title span:nth-of-type(2) {
+  color: #5cffcf;
+}
+
+.header__title span:nth-of-type(3) {
+  color: #ffc039;
+}
+
+.generator {
+  margin-top: 5rem;
+}
+
+.generator > p,
+.generator > select,
+.generator > input,
+.generator > button {
+  font-size: 2.5rem;
+  display: block;
+  font-family: "Yuji Mai", serif;
+}
+
+.generator > select,
+.generator > input,
+.generator > button {
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.generator > p {
+  /* margin-left: -1rem; */
+  margin-bottom: 0.7rem;
+}
+
+.generator > select,
+.generator > input {
+  min-width: 50vw;
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.generator > button {
+  margin: auto;
+  margin-top: 6rem;
+  padding: 1rem;
+
+  font-size: 3rem;
+  font-weight: bold;
+
+  color: white;
+  background-color: #171920;
+
+  transition: all 0.3s cubic-bezier(1, 1, 1, 1);
+
+  cursor: pointer;
+}
+
+.generator > button:hover {
+  color: #171920;
+  background-color: #ffc039;
+}
+
+.game {
+  width: 80vw;
+  margin: 4rem auto;
+
+  position: relative;
+
+  display: none;
+}
+
+.game__progress {
+  position: relative;
+  padding-left: 2rem;
+  opacity: 50%;
+  font-size: 4rem;
+}
+
+.game__progress > span {
+  opacity: 70%;
+}
+
+.game__progress::after {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 0.1rem;
+  opacity: 70%;
+
+  bottom: -1rem;
+  left: 1rem;
+
+  background-color: gray;
+}
+
+.game__question {
+  font-size: 3.5rem;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.game__choice__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.choice__correct,
+.choice__wrong {
+  font-size: 2rem;
+  margin: 1rem;
+
+  padding: 1.2rem;
+  padding-left: 3rem;
+
+  border-radius: 1rem;
+  cursor: pointer;
+
+  /* background-color: #171920; */
+  border: 5px solid white;
+
+  transition: all 0.3s cubic-bezier(1, 1, 1, 1);
+  
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.game__choice:hover {
+  /* font-size: 2.3rem; */
+  border: 5px solid #ffc039;
+  color: #ffc039;
+}
+
+.correct {
+  border: 5px solid #5cffcf;
+  color: #5cffcf;
+}
+
+.wrong {
+  border: 5px solid #ff8151;
+  color: #ff8151;
+}
+
+.game__next-btn {
+
+  box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 540;
+
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  border:none;
+
+  display: none;
+
+  position: fixed;
+  bottom: 5rem;
+  right: 15rem;
+
+  cursor: pointer;
+}
+
+.game__next-btn:hover {
+  background-color: #a4a8b6;
+  /* box-sizing: border-box; */
+  /* font-weight: bold; */
+  /* width: 9rem; */
+  /* height: 5rem; */
+}
+
+.game__result__score {
+  margin-top: 15rem;
+  letter-spacing: 0.5rem;
+  font-size: 10rem;
+}
+
+.game__result__score span {
+  display: block;
+  /* padding-left: 3rem; */
+  font-size: 4rem;
+  opacity: 60%;
+}
