@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1648875213 source:c:\users\jaewook\onedrive\바탕 화면\david-study-record\david-study-record\olympiad\초직사각형\main.cpp
+	<stdio.h>
+	<vector>
+	<algorithm>
+

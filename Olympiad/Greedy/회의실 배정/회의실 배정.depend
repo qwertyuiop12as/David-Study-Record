@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1649031460 source:c:\users\jaewook\onedrive\바탕 화면\david-study-record\david-study-record\olympiad\greedy\회의실 배정\main.cpp
+	<stdio.h>
+	<vector>
+	<algorithm>
+
