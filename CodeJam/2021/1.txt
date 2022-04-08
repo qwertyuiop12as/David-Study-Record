@@ -1,0 +1,34 @@
+#include<stdio.h>
+int idx[103];
+int arr[103];
+
+void it(int idx1, int idx2) {
+    sum += idx[j] - idx[arr[j]] + 1;
+    int tmp, id = idx[j];
+    tmp = idx[j];
+    idx[j] = idx[arr[j]];
+    idx[arr[j]] = tmp;
+    
+    tmp = arr[j];
+    arr[j] = arr[id];
+    arr[id] = tmp;
+}
+
+int main() {
+    int T;
+    scanf("%d", &T);
+    for (int i = 0; i < T; i++) {
+        int N;
+        scanf("%d", &N);
+        for (int j = 1; j <= N; j++) {
+            scanf("%d", &arr[j]);
+            idx[arr[j]] = j;
+        }
+        
+        int sum = 0;
+        for (int j = 1; j < N; j++) {
+            it(j, idx[j]);
+        }
+        printf("%d\n", sum);
+    }
+}
