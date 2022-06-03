@@ -61,13 +61,19 @@ function resetQuestionList() {
     score: 0,
     token: true,
   };
+
+  categorySelector.innerHTML = ``;
+  difficultySelector.innerHTML = ``;
   
+  nextBtn.innerHTML = "Next";
   header.style.display = "block";
   generator.style.display = "block";
   game.style.display = "none";
 }
 
 function fetchGenerator(e) {
+  generator.style.display = "block";
+  game.style.display = "none";
   if (questionList["token"] == false) {
     resetQuestionList();
   }
