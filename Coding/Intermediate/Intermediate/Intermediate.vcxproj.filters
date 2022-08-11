@@ -93,5 +93,26 @@
     <ClCompile Include="3521_Tutorial.cpp">
       <Filter>소스 파일\탐욕 알고리즘</Filter>
     </ClCompile>
+    <ClCompile Include="1816_외양간.cpp">
+      <Filter>소스 파일\탐욕 알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="1370_회의실배정.cpp">
+      <Filter>소스 파일\탐욕 알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="1828_냉장고.cpp">
+      <Filter>소스 파일\탐욕 알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="2194_요플레_공장.cpp">
+      <Filter>소스 파일\탐욕 알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="2499_저울.cpp">
+      <Filter>소스 파일\탐욕 알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="1183_동전_자판기.cpp">
+      <Filter>소스 파일\탐욕 알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="2641_택배.cpp">
+      <Filter>소스 파일\탐욕 알고리즘</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
