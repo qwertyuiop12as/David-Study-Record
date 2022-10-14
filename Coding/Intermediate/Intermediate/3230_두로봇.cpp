@@ -5,10 +5,11 @@
 using namespace std;
 
 int N, x, y, res = -1;
+bool done = false;
 vector<vector<pair<int, int>>> arr;
 vector<int> cost_map, visited;
 
-void DFS(int cur, int robot, int cost);
+void DFS(int cur, int cost, int max_path);
 
 int p1, p2;
 int main()
@@ -29,47 +30,39 @@ int main()
 		arr[p2].push_back(make_pair(p1, cost));
 	}
 
-	DFS(x, 1, 0);
-	for (i = 0; i < N; i++)
-		printf("%d : %d\n", i+1, cost_map[i]);
+	if (x == y)
+	{
+		printf("0");
+		return 0;
+	}
 
 	for (int &element : visited)
 		element = 0;
 
-	DFS(y, 2, 0);
+	DFS(x, 0, 0);
 
 	printf("%d\n", res);
 	return 0;
 }
 
-void DFS(int cur, int robot, int cost)
+void DFS(int cur, int cost, int max_path)
 {
-	if (robot == 1)
+	if (visited[cur] == 1 || done == true)
+		return;
+
+	visited[cur] = 1;
+
+	if (cur == y)
 	{
-		if (visited[cur] == 1 || cur == y)
-			return;
-
-		visited[cur] = 1;
-
-		cost_map[cur] = cost;
-
-		for (int i = 0; i < arr[cur].size(); i++)
-			DFS(arr[cur][i].first, robot, cost + arr[cur][i].second);
+		done = true;
+		res = cost - max_path;
+		//printf("max_path : %d\n", max_path);
 	}
 
-	if (robot == 2)
+	cost_map[cur] = cost;
+
+	for (int i = 0; i < arr[cur].size(); i++)
 	{
-		visited[cur] = 1;
-
-		for (int i = 0; i < arr[cur].size(); i++)
-		{
-			if (visited[arr[cur][i].first] == 0)
-			{
-				if (res == -1 || res > cost + cost_map[arr[cur][i].first])
-					res = cost + cost_map[arr[cur][i].first];
-
-				DFS(arr[cur][i].first, robot, cost + arr[cur][i].second);
-			}
-		}
+		DFS(arr[cur][i].first, cost + arr[cur][i].second, max(max_path, arr[cur][i].second));
 	}
 }
